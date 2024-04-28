@@ -6,7 +6,46 @@
          "log format": "%(asctime)s %(levelname)s %(message)s",
          "log name": "camgen"
     },
-    "sites": ["ORD", "DEN", "EWR", "SFO", "IAD", "LAX","IAH"],
+    "sites": [{"ORD":{
+                        "camera distribution": {
+                                "Q3628-VE":[{"count":200, 
+                                             "firmware version":"11.9.71",
+                                             "subnet":"10.2.110",
+                                             "purchase date":"2021-06-29"
+                                            },
+                                            {"count":100, 
+                                             "firmware version":"11.8.71",
+                                             "subnet":"10.2.115",
+                                             "purchase date":"2023-02-01"
+                                            }
+                                           ],
+
+                                "Q6010-E":[{"count":300, 
+                                             "firmware version":"11.8.61",
+                                             "subnet":"10.2.116",
+                                             "purchase date":"2021-06-29"
+                                            },
+                                            {"count":100, 
+                                             "firmware version":"11.8.71",
+                                             "subnet":"10.2.117",
+                                             "purchase date":"2023-02-01"
+                                            }
+                                           ],
+                                "P3738-PLE":[{"count":100, 
+                                             "firmware version":"11.8.61",
+                                             "subnet":"10.2.110",
+                                             "purchase date":"2021-06-29"
+                                            },
+                                            {"count":50, 
+                                             "firmware version":"11.8.71",
+                                             "subnet":"10.2.115",
+                                             "purchase date":"2023-02-01"
+                                            }
+                                           ]
+                            }
+                        }
+                }
+            ],
     "devices": {
         "Q3628-VE": {
             "firmware versions": [
